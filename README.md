@@ -10,7 +10,7 @@
 
 ## Contributors:
 
-  Danni Liu
+  Danni Lu
   
   George Saadi
   
@@ -18,9 +18,9 @@
   
   Antonio Marcum
   
-  Tom K
+  Thomas Kiener
   
-  Zach
+  Zach Schroeder
   
 ---
 
