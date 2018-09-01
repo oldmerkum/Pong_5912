@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadSceneOnClick : MonoBehaviour {
-    int startSceneIndex = 1;
+    public int startSceneIndex;
     void Start()
     {
         GetComponent<Button>().onClick.AddListener(delegate { LoadByIndex(startSceneIndex); });

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ball
   - paddle
+  - pause_menu
   layers:
   - Default
   - TransparentFX
