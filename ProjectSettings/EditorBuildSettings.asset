@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_scenes/pong_base.unity
     guid: 1d8f4f09d48cf75428418e2689dc0933
+  - enabled: 1
+    path: Assets/_scenes/pong_debug_environment.unity
+    guid: 4e3c3ba2cc42e4843b4e04bbda4493b0
   m_configObjects: {}
