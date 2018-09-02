@@ -188,6 +188,23 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 41086329}
   m_CullTransparentMesh: 0
+--- !u!1 &84850926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 7461a7b0cf97947fd9b9e4502fd2d07b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1581732161}
+--- !u!114 &84850928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84850926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 96895105a405f304b9b62e89ea5e5d7a, type: 2}
 --- !u!1 &131518941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,6 +1288,7 @@ GameObject:
   - component: {fileID: 734611420}
   - component: {fileID: 734611419}
   - component: {fileID: 734611421}
+  - component: {fileID: 734611422}
   m_Layer: 5
   m_Name: MainMenuPanel
   m_TagString: Untagged
@@ -1357,6 +1375,19 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &734611422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 734611417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7fe1c02ab485941821c8603feb9b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 646192857}
+  selectedObject: {fileID: 131518941}
 --- !u!1 &777381280
 GameObject:
   m_ObjectHideFlags: 0
