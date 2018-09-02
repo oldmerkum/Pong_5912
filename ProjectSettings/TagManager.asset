@@ -7,6 +7,8 @@ TagManager:
   - ball
   - paddle
   - pause_menu
+  - wall
+  - goal
   layers:
   - Default
   - TransparentFX
