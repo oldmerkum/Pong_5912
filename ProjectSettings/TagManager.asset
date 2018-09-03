@@ -9,6 +9,7 @@ TagManager:
   - pause_menu
   - wall
   - goal
+  - win
   layers:
   - Default
   - TransparentFX

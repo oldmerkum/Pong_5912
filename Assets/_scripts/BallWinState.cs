@@ -9,6 +9,7 @@ public class BallWinState : MonoBehaviour {
     public Text rightText;
     public GameObject leftPaddle;
     public GameObject rightPaddle;
+    public GameObject winPanel;
 
     private string goal = "goal";
 	private Vector3 restartForce = new Vector3 (5, 0, 0);
@@ -30,14 +31,18 @@ public class BallWinState : MonoBehaviour {
 	{
         if (transform.localPosition.x < leftPaddle.transform.localPosition.x)
         {
-            leftScore += 1;
+            rightScore += 1;
         }
         else if (transform.localPosition.x > rightPaddle.transform.localPosition.x)
         {
-            rightScore += 1;
+            leftScore += 1;
         }
         leftText.text = leftScore.ToString();
         rightText.text = rightScore.ToString();
+        if (rightScore >= 10 || leftScore >= 10)
+        {
+            win();
+        }
 
         transform.localPosition = new Vector3 (-254.5f, -95.12941f, 0.0f);
 		GetComponent<Rigidbody> ().velocity = Vector3.zero;
@@ -47,4 +52,18 @@ public class BallWinState : MonoBehaviour {
 		int randSign = Random.Range (0, 2) * 2 - 1;
 		GetComponent<Rigidbody> ().AddForce (randSign*restartForce);
 	}
+
+    void win()
+    {
+        if (leftScore > rightScore)
+        {
+            winPanel.GetComponentInChildren<Text>().text = "Left Side Wins!";
+        }
+        else
+        {
+            winPanel.GetComponentInChildren<Text>().text = "Right Side Wins!";
+        }
+        winPanel.SetActive(true);
+        Time.timeScale = 0;
+    }
 }

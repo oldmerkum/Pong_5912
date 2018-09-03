@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87e894b06975474ba241e8531e34de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneIndex: 2
+  startSceneIndex: 4
 --- !u!1001 &180286398
 Prefab:
   m_ObjectHideFlags: 0
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87e894b06975474ba241e8531e34de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneIndex: 3
+  startSceneIndex: 2
 --- !u!114 &401571130
 MonoBehaviour:
   m_ObjectHideFlags: 0
