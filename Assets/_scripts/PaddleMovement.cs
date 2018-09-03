@@ -14,7 +14,7 @@ public class PaddleMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         float move = Input.GetAxisRaw(paddleInput) * speed;
-        Debug.Log("move: " + move);
+        //Debug.Log("move: " + move);
         rb.velocity = (new Vector3(0, move, 0));
 	}
 }
