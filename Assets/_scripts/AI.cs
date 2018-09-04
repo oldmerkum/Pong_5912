@@ -21,6 +21,10 @@ public class AI : MonoBehaviour {
         //Debug.Log("move: " + move);
         rb.velocity = (new Vector3(0, move, 0));
 
+
+        if (Input.GetKeyDown(KeyCode.Alpha1)) { this.transform.position = new Vector3(this.transform.position.x, 8, this.transform.position.z); }
+        if (Input.GetKeyDown(KeyCode.Alpha2)) { this.transform.position = new Vector3(this.transform.position.x, 1, this.transform.position.z); }
+        if (Input.GetKeyDown(KeyCode.Alpha3)) { this.transform.position = new Vector3(this.transform.position.x, -6, this.transform.position.z); }
     }
 
     float AIMove(int mode)
