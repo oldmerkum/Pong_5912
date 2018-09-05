@@ -13,14 +13,17 @@ public class BallWinState : MonoBehaviour {
 
     private string goal = "goal";
 	private Vector3 restartForce = new Vector3 (5, 0, 0);
-    private int leftScore, rightScore;
+    public int leftScore, rightScore;
 
     private void Start()
     {
-        leftText.text = "0";
-        rightText.text = "0";
-        leftScore = 0;
-        rightScore = 0;
+        if (PlayerPrefs.GetInt("continue") == 0)
+        {
+            leftText.text = "0";
+            rightText.text = "0";
+            leftScore = 0;
+            rightScore = 0;
+        }
     }
 
     void OnCollisionEnter(Collision ballCol)
@@ -42,6 +45,7 @@ public class BallWinState : MonoBehaviour {
         if (rightScore >= 10 || leftScore >= 10)
         {
             win();
+            //PlayerPrefs.SetInt("continue", 0);
         }
 
         transform.localPosition = new Vector3 (-254.5f, -95.12941f, 0.0f);
@@ -65,5 +69,6 @@ public class BallWinState : MonoBehaviour {
         }
         winPanel.SetActive(true);
         Time.timeScale = 0;
+        GameObject.FindGameObjectWithTag("game_controller").GetComponent<GameController>().canLoad = false;
     }
 }

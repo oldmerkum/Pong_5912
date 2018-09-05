@@ -10,6 +10,7 @@ TagManager:
   - wall
   - goal
   - win
+  - game_controller
   layers:
   - Default
   - TransparentFX
